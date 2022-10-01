@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header-logo />
+    <div class="pages">
+    <side-menu/>
+    <!-- <about-page /> -->
+    <contact-page/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ContactPage from './components/contactPage.vue';
+import headerLogo from "./components/headerLogo.vue";
+// import AboutPage from "./components/aboutPage.vue";
+import SideMenu from './components/sideMenu.vue';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { headerLogo, SideMenu, ContactPage },
+};
 </script>
 
 <style>
@@ -21,8 +25,14 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0 5rem;
+}
+body {
+  margin: 0;
+}
+.pages {
+  display: flex;
+  margin-top:1rem;
 }
 </style>
