@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: "headerLogo",
+  name: "HeaderLogo",
 };
 </script>
 
 <style>
 .logo {
-    /* margin-left: 8rem; */
-    width: 70%;
+  /* margin-left: 8rem; */
+  width: 70%;
 }
 </style>

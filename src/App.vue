@@ -11,16 +11,13 @@
 
 <script lang="ts">
 import Vue from "vue";
-import aboutPage from "./components/aboutPage.vue";
-import headerLogo from "./components/headerLogo.vue";
-import sideMenu from "./components/sideMenu.vue";
+import HeaderLogo from "./components/HeaderLogo.vue";
+import SideMenu from "./components/SideMenu.vue";
 export default Vue.extend({
   name: "App",
   components: {
-    headerLogo,
-    sideMenu,
-    // contactPage,
-    aboutPage,
+    HeaderLogo,
+    SideMenu,
   },
 });
 </script>

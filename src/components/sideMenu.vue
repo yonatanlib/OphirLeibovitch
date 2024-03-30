@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "sideMenu",
+  name: "SideMenu",
   data() {
     return {
       listData: [
@@ -58,6 +58,5 @@ ul {
   font-size: 14pt;
   padding-left: 1rem;
   line-height: 2.2rem;
-
 }
 </style>
