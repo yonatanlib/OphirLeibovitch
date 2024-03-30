@@ -19,6 +19,7 @@ export default Vue.extend({
 <style>
 .logo {
   width: 70%;
+  height: 7rem;
 }
 
 .logo:hover {

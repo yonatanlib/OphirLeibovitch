@@ -44,7 +44,7 @@ export default Vue.extend({
 .side-menu-div {
   /* may be changed later */
   margin-top: 1rem;
-  width: 11.25rem;
+  max-width: 15.25rem;
   height: 100%;
   display: flex;
   flex-direction: column;

@@ -6,6 +6,10 @@
       :src="imgPath"
       alt="HomePage Image"
     />
+    <p>
+      Image from "Counterlight" exhibition by Maya Zack, music by Ophir
+      Leibovitch, Tel-Aviv Museum of Art, 2016
+    </p>
   </div>
 </template>
 
@@ -21,7 +25,6 @@ export default Vue.extend({
   },
   computed: {
     imgPath() {
-      console.log(this.imgUrl);
       return require(`../assets/imgs/${this.imgUrl}`);
     },
   },
@@ -36,7 +39,10 @@ export default Vue.extend({
   padding: 1rem;
 }
 .home-page-image {
-  width: 100%;
+  display: block;
   object-fit: contain;
+  min-height: 75vh;
+  max-width: 90vw;
+  margin: auto;
 }
 </style>

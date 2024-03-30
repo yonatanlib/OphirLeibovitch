@@ -33,7 +33,7 @@ export default Vue.extend({
 
 .full-page {
   display: grid;
-  grid-template-columns: 11.25rem 1fr;
+  grid-template-columns: 1.3fr 10fr;
   grid-template-rows: 100px 4fr;
 }
 
