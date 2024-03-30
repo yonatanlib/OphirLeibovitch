@@ -1,18 +1,27 @@
 <template>
-  <div>
+  <div @click="handleLogoClick">
     <img class="logo" src="../assets/imgs/logo.png" alt="Logo" />
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+export default Vue.extend({
   name: "HeaderLogo",
-};
+  methods: {
+    handleLogoClick() {
+      this.$router.push("/");
+    },
+  },
+});
 </script>
 
 <style>
 .logo {
-  /* margin-left: 8rem; */
   width: 70%;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 </style>

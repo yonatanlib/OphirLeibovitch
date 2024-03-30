@@ -44,14 +44,13 @@ export default {
 <style>
 .about-div {
   display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 .ophir-about-img {
   order: 2;
   position: relative;
-  right: 2rem;
-  top: 3rem;
+  /* right: 2rem;
+  top: 3rem; */
 
   width: 13rem;
 }
