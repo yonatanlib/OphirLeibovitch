@@ -3,8 +3,7 @@
     <header-logo />
     <div class="pages">
       <side-menu />
-      <about-page />
-      <!-- <contact-page /> -->
+      <router-view />
     </div>
   </div>
 </template>

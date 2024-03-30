@@ -1,6 +1,15 @@
 import VueRouter, { RouteConfig } from "vue-router";
-import homePage from "../views/HomePage.vue";
+import HomePage from "../views/HomePage.vue";
+import AboutPage from "../views/AboutPage.vue";
+import ContactPage from "../views/ContactPage.vue";
 
-const routes: RouteConfig[] = [{ path: "/" }];
+const routes: RouteConfig[] = [
+  { path: "/", component: HomePage },
+  { path: "/about", component: AboutPage },
+  { path: "/contact", component: ContactPage },
+  //   { path: "/works", component: AboutPage },
+];
 
-// const router = VueRouter({});
+const router = new VueRouter({ routes, mode: "hash" });
+
+export default router;
