@@ -3,33 +3,53 @@
     <img class="ophir-about-img" src="../assets/imgs/ophir-about.png" alt="" />
     <div class="about-text">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at
-        metus vitae urna aliquet varius. Sed eget magna facilisis, pulvinar
-        tellus sed, dignissim metus. Integer a nisi eros. In quis nisl mi. Sed
-        rutrum dignissim ipsum ut porta. Morbi interdum tincidunt dictum. Sed
-        vitae viverra mauris, vitae faucibus massa. Morbi quis metus at lectus
-        tristique porta. In a nisl ac justo volutpat porta. Ut sit amet blandit
-        nisl. Nullam consectetur tortor eget diam rutrum dictum. Fusce sagittis
-        nibh quis facilisis accumsan. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Cras aliquam urna nec ipsum pulvinar, nec dignissim
-        ante efficitur. Nam vel velit dolor. Duis faucibus erat in molestie
-        porta. Phasellus at lorem tempus, egestas purus eu, porta arcu.
-        Phasellus arcu nisi, lacinia vitae tellus vitae, eleifend fermentum mi.
-        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-        inceptos himenaeos. Donec nec sollicitudin nibh. Nunc quis pharetra
-        elit, vitae viverra dui. Quisque non erat ut eros blandit suscipit. Nam
-        augue erat, pharetra id finibus non, venenatis id turpis. Praesent
-        lobortis neque odio, eu elementum turpis pretium sit amet. Phasellus dui
-        ex, cursus ac vestibulum in, vestibulum ac est. Nunc fringilla
-        consectetur odio sit amet cursus. Ut gravida dignissim auctor. Nullam
-        blandit laoreet egestas. Suspendisse nulla ipsum, viverra eget tempor
-        eu, vulputate vitae neque. Ut ut dolor gravida, efficitur massa id,
-        convallis lectus. Vivamus sed vulputate nunc. Donec eu massa ac urna
-        placerat pretium. Ut vel nibh commodo, imperdiet augue nec, cursus
-        metus. Nullam neque justo, dignissim et cursus nec, semper in diam.
-        Donec sem orci, suscipit a aliquam eu, lacinia quis velit. Sed lobortis
-        lacus sit amet lectus cursus dignissim. Quisque mauris nisi, tempor quis
-        euismod eu, condimentum fermentum libero. Cras condimentum velit non
+        Award-winning Film composer, <b>Israeli music Oscar for Foxtrot</b> and
+        three times <b>Israeli Oscar nominee</b>, with over hundred scores on
+        his growing record, Ophir Leibovitch is one of the most endearingly
+        highly evaluated musicians in the Israeli film industry.
+      </p>
+      <p>
+        Leibovitch is the recipient of the prestige and honorable 2012
+        <b>ACUM award</b> (The Israeli Association of Authors, Publishers, and
+        music composers) for best television and films original composer.
+      </p>
+      <p>
+        He is known for his comprehensive cinematheque understanding that allows
+        him to both nurture a unique seamlessly relationship with Directors and
+        contribute to Film educational programs as a committee member for
+        student films.
+      </p>
+      <p>
+        In 2015, Leibovitch was awarded <b>The Haggiag Best Music Award</b> at
+        the Jerusalem International Film Festival, for his score of the
+        Documentary “Strung Out”.
+      </p>
+      <p>
+        With numerous of his scores produced for festivals such as IDFA, Venice
+        International Film Festival, Palm Springs, Tribeca Film Festival,
+        Berlinale international film festival, Leibovitch has lately invaded to
+        the American scene while writing the score to AOL’s debut reality series
+        “Connected”.
+      </p>
+      <p>
+        Leibovitch is one of the founders of 'The Tractor's Revenge' band.
+        Established in 89' ‘The Tractor's revenge' is evaluated as one of
+        today’s most appreciated bands in Israel. Holding more than seven albums
+        and two Gold records, the Band’s music strives from popular rock music
+        to designated signature repertoire of the Israeli culture. The band
+        released their new album in October 2011.
+      </p>
+      <p>
+        Among their music, the 'Tractor's revenge' have composed ‘Kyr’ by Ohad
+        Naharin for the 'Bat Sheva Dance Company’, and Leibovitch played his
+        score touring with the company on stages worldwide. The group had also
+        composed the live music of ‘Romeo and Juliet’ for The Haifa Theater and
+        ‘Otelo’, which is signed with the avant-garde record label ‘Muzea’ in
+        France.
+      </p>
+      <p>
+        Additionally, the band worked with ‘Or-cutter’, the Netherlands
+        Avant-garde group, for The Jerusalem ‘Phenomena’ Festival.
       </p>
     </div>
   </div>
@@ -45,20 +65,19 @@ export default {
 .about-div {
   display: flex;
   width: 100%;
+  justify-content: center;
 }
+
 .ophir-about-img {
   order: 2;
   position: relative;
-  /* right: 2rem;
-  top: 3rem; */
-
+  object-fit: contain;
   width: 13rem;
+  margin-left: 2rem;
 }
 .about-text {
   order: 1;
-  width: 36rem;
+  max-width: 50rem;
   text-align: center;
-  margin-top: 4rem;
-  margin-left: 4rem;
 }
 </style>
