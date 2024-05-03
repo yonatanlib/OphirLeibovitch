@@ -42,7 +42,7 @@ export default Vue.extend({
 
 <style>
 .side-menu-div {
-  /* may be changed later */
+  margin-left: 1rem;
   margin-top: 1rem;
   max-width: 15.25rem;
   height: 100%;

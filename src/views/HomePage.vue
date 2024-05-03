@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { fetchHomePageImage } from "../DL/HomePageDL";
+import HomePageDL from "../DL/HomePageDL";
 export default Vue.extend({
   name: "HomePage",
   data() {
@@ -29,7 +29,7 @@ export default Vue.extend({
     },
   },
   async created() {
-    this.imgUrl = await fetchHomePageImage();
+    this.imgUrl = await HomePageDL.fetchHomePageImage();
   },
 });
 </script>

@@ -1,3 +1,5 @@
-export async function fetchHomePageImage() {
-  return "home-page.jpg";
-}
+export default {
+  async fetchHomePageImage() {
+    return "home-page.jpg";
+  },
+};
