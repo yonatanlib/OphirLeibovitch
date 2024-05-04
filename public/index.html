@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body style="margin: 0">
+  <body
+    style="
+      margin: 0;
+      background: linear-gradient(
+        301deg,
+        rgba(22, 22, 22, 1) 23%,
+        rgba(20, 17, 17, 1) 67%,
+        rgba(0, 0, 0, 1) 100%
+      );
+    "
+  >
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work

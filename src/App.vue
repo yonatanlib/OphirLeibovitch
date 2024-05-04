@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div class="full-page">
-      <header-logo class="header" />
-      <side-menu class="side-bar" />
+      <header-menu />
       <router-view />
     </div>
   </div>
@@ -10,37 +9,25 @@
 
 <script lang="ts">
 import Vue from "vue";
-import HeaderLogo from "./components/HeaderLogo.vue";
-import SideMenu from "./components/SideMenu.vue";
+import HeaderMenu from "./components/HeaderMenu/HeaderMenu.vue";
 export default Vue.extend({
   name: "App",
-  components: {
-    HeaderLogo,
-    SideMenu,
-  },
+  components: { HeaderMenu },
 });
 </script>
 
 <style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  /* margin-top: 60px; */
-}
-
-.full-page {
-  display: grid;
-  grid-template-columns: 1.3fr 10fr;
-  grid-template-rows: 100px 4fr;
+  color: rgba(255, 255, 255, 0.63);
 }
 
 .header {
   grid-column: 1 / 5;
   grid-row: 1;
-  background-color: #f3f3f3;
 }
 .side-bar {
   grid-column: 1;
