@@ -11,6 +11,6 @@ const routes: RouteConfig[] = [
   { path: "/works", component: WorksPage },
 ];
 
-const router = new VueRouter({ routes, mode: "hash" });
+const router = new VueRouter({ routes, mode: "history" });
 
 export default router;

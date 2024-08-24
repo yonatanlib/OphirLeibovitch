@@ -1,6 +1,6 @@
 <template>
   <div class="header-wrapper">
-    <h1 class="title">OPHIR LEIBOVITCH</h1>
+    <h1 class="title" @click="navigateToHome">OPHIR LEIBOVITCH</h1>
     <navigation-categories />
   </div>
 </template>
@@ -11,6 +11,11 @@ import NavigationCategories from "./NavigationCategories.vue";
 export default Vue.extend({
   components: { NavigationCategories },
   name: "HeaderMenu",
+  methods: {
+    navigateToHome() {
+      this.$router.push({ name: "HomePage" });
+    },
+  },
 });
 </script>
 

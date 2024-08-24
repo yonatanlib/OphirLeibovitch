@@ -1,11 +1,14 @@
 <template>
   <div class="about-div">
-    <!-- <h2 class="page-title">COMPOSER & MULTI-INSTRUMENTALIST</h2> -->
-    <h2 class="page-title">COMPOSER</h2>
+    <h2 class="page-title">COMPOSER & MULTI-INSTRUMENTALIST</h2>
     <div class="img-text-wrapper">
       <div class="img-wrapper">
-        <img class="ophir-about-img" src="../assets/imgs/About-page2.png" alt=""
-        sizes= />
+        <img
+          class="ophir-about-img"
+          src="../assets/imgs/test.png"
+          alt=""
+          sizes=""
+        />
       </div>
       <div class="about-text">
         <p>
@@ -72,7 +75,6 @@ export default {
 <style scoped>
 .about-div {
   display: flex;
-  /* width: 100%; */
   flex-direction: column;
   padding-inline: 4rem;
 }
@@ -113,6 +115,9 @@ export default {
   width: 66.66667%;
   text-align: left;
   font-size: 1.3rem;
-  /* padding-inline-end: 3rem; */
+}
+
+.about-text p:first-child {
+  margin-block-start: 0;
 }
 </style>
