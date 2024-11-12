@@ -5,7 +5,7 @@ import ContactPage from "../views/ContactPage.vue";
 import WorksPage from "../views/WorksPage.vue";
 
 const routes: RouteConfig[] = [
-  { path: "/", component: HomePage },
+  { path: "/", component: HomePage, name: "HomePage" },
   { path: "/about", component: AboutPage },
   { path: "/contact", component: ContactPage },
   { path: "/works", component: WorksPage },

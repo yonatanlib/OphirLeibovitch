@@ -14,5 +14,5 @@ export const getWorksImages = async () => {
   const images = importAll(
     require.context("../assets/Extras", false, /\.(png|jpe?g|svg)$/)
   );
-  console.log(images);
+  return Object.values(images);
 };
