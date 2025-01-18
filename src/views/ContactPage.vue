@@ -10,7 +10,9 @@
       <p>Ophir Leibovitch</p>
       <p>e: opmusic@gmail.com</p>
     </div>
-    <img class="contact-img" src="../assets/imgs/contact-img.jpeg" />
+    <div class="contact-img-container">
+      <img class="contact-img" src="../assets/imgs/contact-img.jpeg" />
+    </div>
   </div>
 </template>
 
@@ -28,13 +30,42 @@ export default {
   height: calc(100svh - 5rem);
 }
 
+.contact-img-container {
+  position: relative;
+  width: 25rem;
+  height: 39rem;
+  align-self: center;
+  margin-inline: 2rem;
+}
+
 .contact-img {
-  width: 20rem;
-  height: 34rem;
   object-fit: contain;
   aspect-ratio: 196/319;
   object-position: center;
-  align-self: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 4%;
+}
+
+.contact-img-conte::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 70%, white 100%);
+  z-index: 2;
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .title {

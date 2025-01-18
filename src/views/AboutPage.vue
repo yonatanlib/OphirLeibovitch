@@ -35,6 +35,11 @@
           Documentary “Strung Out”.
         </p>
         <p>
+          In 2018, he was awarded the
+          <b>Best Music for a Documentary Film Award</b> by the Israeli
+          Documentary Forum for his score for the film "Wild".
+        </p>
+        <p>
           With numerous of his scores produced for festivals such as IDFA,
           Venice International Film Festival, Palm Springs, Tribeca Film
           Festival, Berlinale international film festival, Leibovitch has lately
