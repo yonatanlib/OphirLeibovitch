@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper">
     <h1 class="title" @click="navigateToHome">OPHIR LEIBOVITCH</h1>
-    <navigation-categories />
+    <navigation-categories v-if="!isPhoneView" />
   </div>
 </template>
 
@@ -16,6 +16,12 @@ export default Vue.extend({
       this.$router.push({ name: "HomePage" });
     },
   },
+
+  computed: {
+    isPhoneView() {
+      return window.innerWidth <= 768;
+    },
+  },
 });
 </script>
 
@@ -25,6 +31,14 @@ export default Vue.extend({
   padding-inline: 4rem;
   margin-block: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .header-wrapper {
+    flex-direction: column;
+    padding-inline: 2rem;
+  }
+}
+
 .title {
   color: #f5f5f5;
   text-align: left;

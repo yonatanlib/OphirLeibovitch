@@ -125,4 +125,29 @@ export default {
 .about-text p:first-child {
   margin-block-start: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .img-text-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-div {
+    padding-inline: 1rem;
+  }
+  .page-title {
+    font-size: 2rem;
+    margin-inline-start: 1rem;
+    -webkit-margin-start: 1rem;
+  }
+
+  .img-wrapper {
+    width: 100%;
+    max-height: unset;
+    margin-block: 1rem;
+  }
+  .about-text {
+    width: 90%;
+    text-align: center;
+  }
+}
 </style>

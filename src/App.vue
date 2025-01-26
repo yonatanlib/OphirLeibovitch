@@ -17,6 +17,7 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+
 #app {
   font-family: "Dosis", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
