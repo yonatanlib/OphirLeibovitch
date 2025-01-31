@@ -27,7 +27,6 @@ export default {
   display: flex;
   justify-content: center;
   padding-inline: 8rem;
-  height: calc(100svh - 5rem);
 }
 
 .contact-img-container {
@@ -47,33 +46,12 @@ export default {
   border-radius: 4%;
 }
 
-.contact-img-conte::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0) 70%, white 100%);
-  z-index: 2;
-  mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 70%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  -webkit-mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 70%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-
 .title {
   text-transform: none;
   font-family: Dosis;
   font-weight: 300;
   font-style: normal;
-  font-size: 106px;
+  font-size: 6.625rem;
   letter-spacing: 2px;
   line-height: 1em;
   text-transform: uppercase;
@@ -108,5 +86,42 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.63);
   width: 75%;
   margin-block: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-div {
+    flex-direction: column;
+    padding-inline: 2rem;
+  }
+
+  .contact-img-container {
+    width: 100%;
+    height: 100%;
+    margin-block: 2rem;
+  }
+
+  .contact-img {
+    border-radius: 0;
+  }
+
+  .title {
+    font-size: 4.5rem;
+    letter-spacing: 1px;
+    line-height: unset;
+    margin-block-end: 1rem;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  .contact-details p {
+    font-size: 16px;
+  }
+
+  .divider {
+    width: 100%;
+  }
 }
 </style>
