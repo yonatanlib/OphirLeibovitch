@@ -2,14 +2,16 @@
   <div class="header-wrapper">
     <h1 class="title" @click="navigateToHome">OPHIR LEIBOVITCH</h1>
     <navigation-categories v-if="!isPhoneView" />
+    <navigation-drawer v-else />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import NavigationCategories from "./NavigationCategories.vue";
+import NavigationDrawer from "./NavigationDrawer.vue";
 export default Vue.extend({
-  components: { NavigationCategories },
+  components: { NavigationCategories, NavigationDrawer },
   name: "HeaderMenu",
   methods: {
     navigateToHome() {
@@ -34,7 +36,7 @@ export default Vue.extend({
 
 @media screen and (max-width: 768px) {
   .header-wrapper {
-    flex-direction: column;
+    align-items: center;
     padding-inline: 2rem;
   }
 }

@@ -54,4 +54,12 @@ export default Vue.extend({
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+  .categories-container {
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 </style>
