@@ -2,8 +2,7 @@
   <div class="home-page">
     <img
       class="home-page-image"
-      v-if="!!imgUrl"
-      :src="imgPath"
+      src="../assets/imgs/home-page.jpg"
       alt="HomePage Image"
     />
     <p>
@@ -15,28 +14,18 @@
 
 <script lang="ts">
 import Vue from "vue";
-import HomePageDL from "../DL/HomePageDL";
+
 export default Vue.extend({
   name: "HomePage",
-  data() {
-    return {
-      imgUrl: "",
-    };
-  },
-  computed: {
-    imgPath() {
-      return require(`../assets/imgs/${this.imgUrl}`);
-    },
-  },
-  async created() {
-    this.imgUrl = await HomePageDL.fetchHomePageImage();
-  },
 });
 </script>
 
 <style scoped>
 .home-page {
   padding: 1rem;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
 }
 .home-page-image {
   display: block;

@@ -95,6 +95,7 @@ export default {
   line-height: 1.1em;
   text-transform: uppercase;
   margin-inline-start: 4rem;
+  margin-block-end: 1rem;
 }
 
 .img-text-wrapper {
@@ -138,6 +139,7 @@ export default {
     font-size: 2rem;
     margin-inline-start: 1rem;
     -webkit-margin-start: 1rem;
+    margin-bottom: 0;
   }
 
   .img-wrapper {
