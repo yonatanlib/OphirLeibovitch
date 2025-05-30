@@ -41,6 +41,7 @@ export default Vue.extend({
 <style scoped>
 .categories-container {
   display: flex;
+  align-items: center;
 }
 
 .category-item {
@@ -50,13 +51,14 @@ export default Vue.extend({
   font-family: Dosis;
   font-weight: 700;
   font-style: normal;
-  font-size: 13px;
   letter-spacing: 2px;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
   .categories-container {
+    font-size: 13px;
     margin-top: 1rem;
     flex-direction: column;
     gap: 1rem;

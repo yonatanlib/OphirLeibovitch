@@ -46,10 +46,10 @@ export default Vue.extend({
   text-align: left;
   flex-grow: 1;
   letter-spacing: 2px;
+  font-size: 2rem;
   font-family: Dosis;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
   letter-spacing: 2px;
   line-height: 1em;
   text-transform: uppercase;
